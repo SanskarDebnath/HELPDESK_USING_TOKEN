@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      min-height: 100%;
+      background-clip: url("./res/tcea.mp4");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .button-container {
+      text-align: center;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: #d92323;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+       border-radius: 50px;
+      width: 100px;
+      height: 50px;
+    }
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  max-height: 100%;
+  z-index: -1000;
+  overflow: hidden;
+  object-fit: fill;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(15px);
+  -o-filter: blur(15px);
+  -ms-filter: blur(15px);
+  filter: blur(5px);
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #ffffff;
+  color: #f92f2f;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.content {
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 20s steps(200), show 1s 20s forwards;
+      color: white;
+      font-size: 15px;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes show {
+
+      from,
+      to {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <button class="button" onclick="window.location.href='loader.html'">Login</button>
+    <button class="button" onclick="window.location.href='signup.php'">Signup</button>
+    <button class="button" onclick="window.location.href='adminpagelogin.php'">Admin</button>
+  </div>
+</body>
+
+
+<video autoplay muted loop id="myVideo">
+  <source src="./res/tcea.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <p>Techno College of Engineering Agartala(TCEA) formerly known as Techno India Agartala was established on August 2014 by Techno India Group. TCEA affiliated to Tripura University (TU), A central University of India, approved by AICTE ,Govt. of India.</p>
+
+<script>
+
+</script>
+</html>
